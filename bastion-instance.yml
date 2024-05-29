@@ -17,11 +17,11 @@
       register: key_out
 
 
-    - name: Create ED25519 key pair and save private key into a file
-      amazon.aws.ec2_key:
-        name: my_keypair
-        key_type: ed25519
-        file_name: /tmp/aws_ssh_rsa
+    - name: Save private key into file bastion-key.pem
+      copy:
+        content: "{{key_out.key.private_key}}"
+        dest: "./bastion-key.pem"
+        mode: 0600
       when: key_out.changed
 
     - name: Create Sec Grp for bastion host
