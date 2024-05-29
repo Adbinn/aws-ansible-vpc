@@ -18,6 +18,7 @@
 
 
     - name: Save private key into file bastion-key.pem
+      ec2_key:
       copy:
         content: "{{key_out.key.private_key}}"
         dest: "./bastion-key.pem"
