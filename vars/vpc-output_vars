@@ -8,6 +8,6 @@ privsub2id: subnet-017405fd1f3bfdff8
 privsub3id: subnet-03320161a60e3eda2
 igwid: igw-0d0bf99d89d023100
 pubRTid: rtb-018add59ca7eb05d4
-NATGWid: nat-09634b22f47f6117e
+NATGWid: nat-09d1efc2177baaf10
 privRTid: rtb-0ef22ab8aa06b6862
 BastionSGid: 
